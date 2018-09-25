@@ -8,3 +8,13 @@ C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\obj\Debug\PrintQu
 C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\obj\Debug\PrintQueue.csproj.CoreCompileInputs.cache
 C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\obj\Debug\PrintQueue.exe
 C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\obj\Debug\PrintQueue.pdb
+C:\Users\Mesathus\Documents\Visual Studio 2017\Projects\PrintQueue\PrintQueue\bin\Debug\PrintQueue.exe.config
+C:\Users\Mesathus\Documents\Visual Studio 2017\Projects\PrintQueue\PrintQueue\bin\Debug\PrintQueue.exe
+C:\Users\Mesathus\Documents\Visual Studio 2017\Projects\PrintQueue\PrintQueue\bin\Debug\PrintQueue.pdb
+C:\Users\Mesathus\Documents\Visual Studio 2017\Projects\PrintQueue\PrintQueue\obj\Debug\PrintQueue.csprojAssemblyReference.cache
+C:\Users\Mesathus\Documents\Visual Studio 2017\Projects\PrintQueue\PrintQueue\obj\Debug\PrintQueue.Form1.resources
+C:\Users\Mesathus\Documents\Visual Studio 2017\Projects\PrintQueue\PrintQueue\obj\Debug\PrintQueue.Properties.Resources.resources
+C:\Users\Mesathus\Documents\Visual Studio 2017\Projects\PrintQueue\PrintQueue\obj\Debug\PrintQueue.csproj.GenerateResource.cache
+C:\Users\Mesathus\Documents\Visual Studio 2017\Projects\PrintQueue\PrintQueue\obj\Debug\PrintQueue.csproj.CoreCompileInputs.cache
+C:\Users\Mesathus\Documents\Visual Studio 2017\Projects\PrintQueue\PrintQueue\obj\Debug\PrintQueue.exe
+C:\Users\Mesathus\Documents\Visual Studio 2017\Projects\PrintQueue\PrintQueue\obj\Debug\PrintQueue.pdb
