@@ -1,0 +1,10 @@
+C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\bin\Debug\PrintQueue.exe.config
+C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\bin\Debug\PrintQueue.exe
+C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\bin\Debug\PrintQueue.pdb
+C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\obj\Debug\PrintQueue.csprojResolveAssemblyReference.cache
+C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\obj\Debug\PrintQueue.Form1.resources
+C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\obj\Debug\PrintQueue.Properties.Resources.resources
+C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\obj\Debug\PrintQueue.csproj.GenerateResource.Cache
+C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\obj\Debug\PrintQueue.csproj.CoreCompileInputs.cache
+C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\obj\Debug\PrintQueue.exe
+C:\Users\Mesa\Documents\Visual Studio 2017\Projects\PrintQueue\obj\Debug\PrintQueue.pdb
