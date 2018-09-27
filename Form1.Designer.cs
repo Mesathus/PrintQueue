@@ -40,7 +40,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(82, 102);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 83);
             this.button1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(82, 403);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button2.Margin = new System.Windows.Forms.Padding(6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 44);
             this.button2.TabIndex = 1;
@@ -62,7 +62,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(82, 506);
-            this.button3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button3.Margin = new System.Windows.Forms.Padding(6);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 44);
             this.button3.TabIndex = 2;
@@ -76,21 +76,21 @@
             this.pqListBox.ItemHeight = 25;
             this.pqListBox.Location = new System.Drawing.Point(265, 102);
             this.pqListBox.Name = "pqListBox";
-            this.pqListBox.Size = new System.Drawing.Size(732, 254);
+            this.pqListBox.Size = new System.Drawing.Size(601, 254);
             this.pqListBox.TabIndex = 3;
             // 
             // totalListBox
             // 
             this.totalListBox.FormattingEnabled = true;
             this.totalListBox.ItemHeight = 25;
-            this.totalListBox.Location = new System.Drawing.Point(1125, 102);
+            this.totalListBox.Location = new System.Drawing.Point(915, 102);
             this.totalListBox.Name = "totalListBox";
             this.totalListBox.Size = new System.Drawing.Size(376, 454);
             this.totalListBox.TabIndex = 4;
             // 
             // resetUserButton
             // 
-            this.resetUserButton.Location = new System.Drawing.Point(1125, 615);
+            this.resetUserButton.Location = new System.Drawing.Point(915, 598);
             this.resetUserButton.Name = "resetUserButton";
             this.resetUserButton.Size = new System.Drawing.Size(132, 87);
             this.resetUserButton.TabIndex = 5;
@@ -100,7 +100,7 @@
             // 
             // testButton
             // 
-            this.testButton.Location = new System.Drawing.Point(1125, 820);
+            this.testButton.Location = new System.Drawing.Point(915, 701);
             this.testButton.Name = "testButton";
             this.testButton.Size = new System.Drawing.Size(132, 120);
             this.testButton.TabIndex = 6;
@@ -120,7 +120,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

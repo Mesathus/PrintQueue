@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Management;
 using System.Windows.Forms;
 
@@ -13,15 +13,22 @@ namespace PrintQueue
 {
     public partial class Form1 : Form
     {
-        private static readonly Timer printTimer = new Timer();
+        List<string> loginNames = new List<string>();
+        private static readonly System.Windows.Forms.Timer printTimer = new System.Windows.Forms.Timer();
+        private static System.Threading.Timer queueTimer = new System.Threading.Timer(Callback,null,10,Timeout.Infinite);
         //Print queue network path:   \\ALABSPRINTSRV01\A-208 HP M605 Pool
         //ManagementObject a208printer = new ManagementObject("\\\\ALABSPRINTSRV01\\A-208 HP M605 Pool");
-        
+        private static void Callback(Object state)
+        {
+            queueTimer.Change(10, Timeout.Infinite);
+        }
+
 
         public Form1()
         {
             InitializeComponent();
-            printTimer.Tick += CheckJobs;
+            //printTimer.Tick += CheckJobs;
+            printTimer.Tick += TestCheck;
             printTimer.Interval = 5000;
             printTimer.Start();
         }
@@ -31,7 +38,35 @@ namespace PrintQueue
             GetPrintJob();
         }
 
-        private static void CheckJobs(object myobject, EventArgs e)
+        private void TestCheck(object sender, EventArgs e)
+        {
+            printTimer.Stop();
+            if(pqListBox.Items.Count > 0)
+            {
+                for(int i = 0; i < pqListBox.Items.Count; i++)
+                {
+                    string[] user; int pages;
+                    user = pqListBox.Items[i].ToString().Split('\t',' ');
+                    pages = int.Parse(user[1]);
+                    if (pages > 10)
+                    {
+
+                        DialogResult mBox = MessageBox.Show("User " + user[0] + " has created a job with " + pages.ToString()
+                            + " pages.  Would you like to delete this job?", "Process Job?", MessageBoxButtons.YesNo);
+                        if(mBox == DialogResult.Yes)
+                        {
+                            pqListBox.Items.RemoveAt(i);
+                            i--;
+                        }
+                    }
+                }
+            }
+            printTimer.Start();
+        }
+
+        
+
+        private static void CheckJobs(object sender, EventArgs e)
         {
             printTimer.Stop();
             string searchQuery = "SELECT * FROM Win32_PrintJob";
@@ -83,9 +118,23 @@ namespace PrintQueue
 
         }
 
+        Random rand = new Random();
         private void testButton_Click(object sender, EventArgs e)
         {
-            List<string> loginNames = new List<string>();
+            int ID = rand.Next(1, 34);
+            int pages = rand.Next(1, 15);
+            string job;
+            if (ID < 10)
+            {
+                job = "A208-0" + ID + "\t" + pages + " pages";
+            }
+            else
+            {
+                job = "A208-" + ID + "\t" + pages + " pages";
+            }
+            pqListBox.Items.Add(job);
+            /*
+            List<string> loginNames = new List<string>();            
             loginNames.Clear();
             totalListBox.Items.Clear();
             loginNames.Add("A208-01\t\t15\t5");
@@ -97,6 +146,7 @@ namespace PrintQueue
             {
                 totalListBox.Items.Add(item);
             }
+            */
         }
 
         private void resetUserButton_Click(object sender, EventArgs e)
